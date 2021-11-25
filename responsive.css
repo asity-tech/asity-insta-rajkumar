@@ -1,0 +1,43 @@
+:root {
+    --para-font-size-resposive: 10px;
+}
+
+@media only screen and (max-width:1310px) {
+    .wrapper {
+        padding: 30px;
+    }
+    .wrapper .left-div,
+    .wrapper .right-div {
+        padding: 50px;
+    }
+    .wrapper .right-div .texts p {
+        width: 90%;
+        font-size: var(--para-font-size-resposive);
+    }
+    .wrapper .left-div .heading-texts p {
+        font-size: var(--para-font-size-resposive);
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0px;
+        box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+        border-radius: 14px;
+        width: 90%;
+        background: linear-gradient(133deg, #fff, rgba(0, 0, 0, 0.4));
+    }
+    .wrapper .right-div {
+        display: none;
+    }
+    .wrapper .left-div {
+        flex-basis: 100%;
+        padding: 0px 30px;
+    }
+    .wrapper .left-div .heading-texts p {
+        font-size: var(--para-font-size-resposive);
+    }
+}

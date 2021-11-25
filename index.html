@@ -5,152 +5,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Sign In form</title>
+    <link rel="stylesheet" href="responsive.css">
+    <title>Password Recovery</title>
 </head>
 
 <body>
-    <section id="SignInForm">
-        <div class="wrapper">
-            <div class="left-section">
-                <div class="headers">
-                    <span><i class="fas fa-clipboard-list"></i><h2>Rierr</h2></span>
-                    <h3>Greni</h3>
-                </div>
-                <div class="signIn-Form">
-                    <form action="">
-                        <h2>Sign in</h2>
-                        <div class="input-tags">
-                            <input type="text" placeholder="E-mail or CPF" required autocomplete="off">
-                        </div>
-                        <div class="input-tags">
-                            <input type="password" placeholder="Password" required autocomplete="off">
-                        </div>
-                        <div class="btn">
-                            <input type="button" value="LOGIN">
-                        </div>
-                        <div class="some-options">
-                            <div class="checkBox"><input type="checkbox" name="Remeber"><span>Remember</span></div>
-                            <a href="#" id="forgotBtn">Forgot Password?</a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="right-section">
-                <div class="contents">
-                    <div class="image">
-                        <img src="img-1.svg" alt="">
-                    </div>
-                    <div class="texts">
-                        <h2>Keep your personal data updated!</h2>
-                        <p>Avoid problems with your payments and documentation keep your data up to date!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- --------------------------password recovery-------------------------- -->
+    <!-- ----password recovery page start----- -->
     <section id="PasswordRecovery">
         <div class="wrapper">
-            <div class="left-section">
-                <div class="headers">
-                    <span><i class="fas fa-clipboard-list"></i><h2>Rierr</h2></span>
-                    <h3>Greni</h3>
+            <div class="left-div">
+                <div class="logo">
+                    <img src="logo.svg" alt="">
                 </div>
-                <div class="signIn-Form">
-                    <form action="">
-                        <h2>Password recovery</h2>
-                        <p>Enter your E-mail or CPF and we will send you a link to reset your password.</p>
-                        <div class="input-tags">
-                            <input type="text" required autocomplete="off">
-                            <label for="email">E-mail</label>
-                        </div>
-                        <div class="btn">
-                            <input type="button" value="SEND" id=sendBtn>
-                            <input type="button" value="Back" id="backBtn">
-                        </div>
-                    </form>
+                <div class="heading-texts">
+                    <h2>Password recovery</h2>
+                    <p>Enter your Email & we'll send you link to reset your password</p>
                 </div>
+                <form action="#">
+                    <div class="input-div">
+                        <input type="text" autocomplete="off" required>
+                        <label for="Email">Email</label>
+                    </div>
+                    <div class="input-btns">
+                        <input type="button" value="Send" id="send">
+                        <input type="button" value="Exit" id="exit">
+                    </div>
+                </form>
             </div>
-            <div class="right-section">
-                <div class="contents">
-                    <div class="image">
-                        <img src="img-3.svg" alt="">
-                    </div>
-                    <div class="texts">
-                        <h2>Keep your personal data updated!</h2>
-                        <p>Avoid problems with your payments and documentation keep your data up to date!</p>
-                    </div>
+            <div class="right-div">
+                <div class="image">
+                    <img src="illu-1.svg" alt="">
+                </div>
+                <div class="texts">
+                    <h2>Keep your personal data updated!</h2>
+                    <p>Avoid probelms with your payments and documentation keep your data up to date!</p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- ----password recovery page end----- -->
 
 
-    <!-- ------------------------------create password section-------------------------------------- -->
-    <section id="Createpassword">
+
+    <!-- -------sign in page start------ -->
+    <section id="signInpage">
         <div class="wrapper">
-            <div class="left-section">
-                <div class="headers">
-                    <span><i class="fas fa-clipboard-list"></i><h2>Rierr</h2></span>
-                    <h3>Greni</h3>
+            <div class="left-div">
+                <div class="logo">
+                    <img src="logo.svg" alt="">
                 </div>
-                <div class="signIn-Form">
-                    <form action="">
-                        <h2>Create your password</h2>
-                        <div class="input-tags">
-                            <input type="text" required autocomplete="off">
-                            <label for="email">E-mail</label>
-                        </div>
-                        <div class="input-tags">
-                            <input type="password" required autocomplete="off">
-                            <label for="password">Password</label>
-                        </div>
-                        <div class="password-type">
-                            <span>
-                                <h3>8+</h3>
-                                <small>Characters</small>
-                            </span>
-                            <span>
-                                <h3>AA</h3>
-                                <small>Uppercase</small>
-                            </span>
-                            <span>
-                                <h3>Aa</h3>
-                                <small>Lowercase</small>
-                            </span>
-                            <span>
-                                <h3>123</h3>
-                                <small>Numbers</small>
-                            </span>
-                        </div>
-                        <div class="btn">
-                            <input type="button" value="create password" id="Cp">
-                        </div>
-                    </form>
+                <div class="heading-texts">
+                    <h2>Sign In</h2>
                 </div>
+                <form action="#">
+                    <div class="input-div">
+                        <input type="text" autocomplete="off" required>
+                        <label for="Email">Email</label>
+                    </div>
+                    <div class="input-div">
+                        <input type="password" autocomplete="off" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="input-btns">
+                        <input type="button" value="Send" id="gotosignin">
+                    </div>
+                    <div class="some-option">
+                        <div class="check-box">
+                            <input type="checkbox" name="fp" id="">
+                            <small>Remember</small>
+                        </div>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </form>
             </div>
-            <div class="right-section">
-                <div class="contents">
-                    <div class="image">
-                        <img src="img-2.svg" alt="">
-                    </div>
-                    <div class="texts">
-                        <h2>Keep your personal data updated!</h2>
-                        <p>Avoid problems with your payments and documentation keep your data up to date!</p>
-                    </div>
+            <div class="right-div">
+                <div class="image">
+                    <img src="illu-2.svg" alt="">
+                </div>
+                <div class="texts">
+                    <h2>Keep your personal data updated!</h2>
+                    <p>Avoid probelms with your payments and documentation keep your data up to date!</p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- -------sign in page end------ -->
+    <!-- ---------------create password section start--------- -->
+    <section id="createPassword">
+        <div class="wrapper">
+            <div class="left-div">
+                <div class="logo">
+                    <img src="logo.svg" alt="">
+                </div>
+                <div class="heading-texts">
+                    <h2>Password recovery</h2>
+                    <p>Follow the following instructions to create a secure password.</p>
+                </div>
+                <form action="#">
+                    <div class="input-div">
+                        <input type="text" autocomplete="off" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-div">
+                        <input type="password" autocomplete="off" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="password-instruction">
+                        <span>
+                            <h4>6+</h4>
+                            <small>Characters</small>
+                        </span>
+                        <span>
+                            <h4>AA</h4>
+                            <small>Uppercase</small>
+                        </span>
+                        <span>
+                            <h4>Aa</h4>
+                            <small>Lowercase</small>
+                        </span>
+                        <span>
+                            <h4>123</h4>
+                            <small>Numeric</small>
+                        </span>
+                    </div>
+                    <div class="input-btns">
+                        <input type="button" value="Create password" id="createPass">
+                    </div>
+                </form>
+            </div>
+            <div class="right-div">
+                <div class="image">
+                    <img src="illu-3.svg" alt="">
+                </div>
+                <div class="texts">
+                    <h2>Keep your personal data updated!</h2>
+                    <p>Avoid probelms with your payments and documentation keep your data up to date!</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ---------------create password section end--------- -->
+
+    <!-- --------javascript part------ -->
+    <script>
+        const PasswordRecoveryPage = document.querySelector('#PasswordRecovery'),
+            signInpage = document.querySelector('#signInpage'),
+            createPassword = document.querySelector('#createPassword'),
+            sendBtn = document.querySelector('#send'),
+            exitBtn = document.querySelector('#exit'),
+            gotoSigninpageBtn = document.querySelector('#gotosignin');
 
 
+        //onclick send btn (password recovery page) go to sign in page
+        //onclick send btn (sign in page) go to create password page
 
-    <script src="script.js"></script>
+        sendBtn.addEventListener('click', () => {
+            signInpage.classList.add('showPage');
+            PasswordRecoveryPage.classList.add('removePage');
+        });
+        gotoSigninpageBtn.addEventListener('click', () => {
+            createPassword.classList.add('showPage');
+            PasswordRecoveryPage.classList.add('removePage');
+            signInpage.classList.add('removePage')
+
+        });
+    </script>
+
 </body>
 
 </html>

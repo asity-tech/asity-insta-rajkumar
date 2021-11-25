@@ -1,382 +1,296 @@
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600;700;900&display=swap');
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            outline: none;
-            text-decoration: none;
-            font-family: 'Roboto', sans-serif;
-        }
-        
-        section {
-            height: 100vh;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(to right, #508fd9, #77b8d8);
-            position: relative;
-        }
-        
-        .wrapper {
-            display: flex;
-            background: #fff;
-            border-radius: 20px;
-            padding: 60px 100px;
-        }
-        
-        .wrapper .left-section {
-            flex-basis: 50%;
-            padding: 50px;
-        }
-        
-        .wrapper .left-section {
-            flex-basis: 50%;
-        }
-        
-        .wrapper .left-section .headers {
-            display: flex;
-            justify-content: space-around;
-        }
-        
-        .wrapper .left-section .headers span {
-            display: flex;
-            justify-content: space-around;
-        }
-        
-        .wrapper .left-section .headers span i {
-            color: #015eff;
-            font-size: 23px;
-            margin-right: 6px;
-        }
-        
-        .wrapper .left-section .headers h3 {
-            font-size: 23px;
-            color: #31d880;
-            font-family: 'Maven Pro', sans-serif;
-            font-weight: 800;
-        }
-        
-        .wrapper .left-section .signIn-Form {
-            margin-top: 40px;
-        }
-        
-        .wrapper .left-section .signIn-Form form h2 {
-            font-size: 18px;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        
-        .wrapper .left-section .signIn-Form form .input-tags input {
-            height: 45px;
-            margin-bottom: 10px;
-            width: 100%;
-            border: 1px solid rgba(0, 0, 0, 0.15);
-            border-radius: 6px;
-            padding-left: 10px;
-        }
-        
-        .wrapper .left-section .signIn-Form form .input-tags input::placeholder {
-            font-size: 14px;
-            color: rgba(0, 0, 0, 0.5);
-            font-weight: 500;
-        }
-        
-        .wrapper .left-section .signIn-Form form .btn input {
-            width: 100%;
-            height: 35px;
-            border: none;
-            background: #347eff;
-            color: #fff;
-            font-size: 16px;
-            border-radius: 5px;
-            box-shadow: 0 0 4px #347eff;
-            cursor: pointer;
-        }
-        
-        .wrapper .left-section .signIn-Form form .some-options {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-            align-items: center;
-        }
-        
-        .wrapper .left-section .headers span h2 {
-            font-size: 23px;
-            color: #333;
-        }
-        
-        .wrapper .left-section .signIn-Form form .some-options .checkBox {
-            display: flex;
-            align-items: center;
-        }
-        
-        .wrapper .left-section .signIn-Form form .some-options .checkBox input {
-            margin-right: 4px;
-            cursor: pointer;
-        }
-        
-        .wrapper .left-section .signIn-Form form .some-options .checkBox span {
-            font-size: 14px;
-            color: #666;
-        }
-        
-        .wrapper .left-section .signIn-Form form .some-options a {
-            font-weight: 600;
-            font-size: 13px;
-            color: #347eff;
-        }
-        
-        .wrapper .right-section {
-            flex-basis: 50%;
-            border-left: 1px solid rgba(0, 0, 0, 0.1);
-            text-align: center;
-            padding: 50px;
-            pointer-events: none;
-        }
-        
-        .right-section .contents .image {
-            height: 200px;
-        }
-        
-        .right-section .contents .image img {
-            height: 100%;
-        }
-        
-        .right-section .contents .texts {
-            text-align: center;
-        }
-        
-        .right-section .contents .texts h2 {
-            font-size: 17px;
-            color: #444;
-            margin-top: 40px;
-        }
-        
-        .right-section .contents .texts p {
-            font-size: 12px;
-            color: #777;
-            margin-top: 10px;
-            /* width: 300px; */
-        }
-        /* ----------------------passwrod revoery--------------------- */
-        
-        #PasswordRecovery {
-            position: absolute;
-            top: -1000px;
-            left: 0;
-            transition: all 0.3s;
-        }
-        
-        #PasswordRecovery.active {
-            top: 0;
-            transition: all 0.5s;
-        }
-        
-        .wrapper .signIn-Form form p {
-            font-size: 13px;
-            color: #777;
-            margin-bottom: 20px;
-            width: 300px;
-        }
-        
-        .wrapper .left-section .signIn-Form form .btn input:nth-child(2) {
-            background: #ffff;
-            box-shadow: unset;
-            color: #015eff;
-            font-weight: 550;
-            cursor: pointer;
-        }
-        
-        #PasswordRecovery .wrapper .signIn-Form form .btn input:first-child {
-            margin-top: 10px;
-        }
-        /* ----------------------creating password------------------- */
-        
-        #Createpassword {
-            position: absolute;
-            top: 0;
-            left: -10000px;
-        }
-        
-        #Createpassword.active {
-            left: 0;
-            transition: all 0.5s;
-        }
-        
-        .wrapper .left-section .signIn-Form form .input-tags {
-            position: relative;
-        }
-        
-        .wrapper .left-section .signIn-Form form .input-tags label {
-            position: absolute;
-            top: 12px;
-            left: 14px;
-            font-size: 15px;
-            color: #999;
-            font-weight: 550;
-            pointer-events: none;
-            transition: all 0.3s;
-        }
-        
-        .wrapper .left-section .signIn-Form form .input-tags input:focus~label,
-        .wrapper .left-section .signIn-Form form .input-tags input:valid~label {
-            transform: translate( -6px, -19px);
-            font-size: 13px;
-            font-weight: normal;
-            transition: 0.3s;
-            background: #fff;
-            padding: 0px 3px;
-            color: #31d880;
-        }
-        
-        .wrapper .left-section .signIn-Form form .input-tags input:focus {
-            border: 1px solid #31d880;
-            box-shadow: 0 0 4px #31d880;
-        }
-        
-        .wrapper .left-section .signIn-Form form .password-type {
-            display: flex;
-            margin-bottom: 20px;
-            align-items: center;
-            justify-content: space-between;
-            text-align: center;
-        }
-        
-        .wrapper .left-section .signIn-Form form .password-type span h3 {
-            font-size: 14px;
-        }
-        
-        .wrapper .left-section .signIn-Form form .password-type span small {
-            font-size: 11px;
-            color: #333;
-        }
-        
-        .wrapper .left-section .signIn-Form form .password-type span:first-child h3 {
-            color: #31d880;
-        }
-        
-        .wrapper .left-section .signIn-Form form .password-type span:nth-child(2) h3 {
-            color: tomato;
-        }
-        
-        .wrapper .left-section .signIn-Form form .password-type span:nth-child(3) h3,
-        .wrapper .left-section .signIn-Form form .password-type span:nth-child(4) h3 {
-            color: #666;
-        }
-        
-        .wrapper .left-section .signIn-Form form .btn input {
-            width: 100%;
-            height: 35px;
-            border: none;
-            background: #347eff;
-            color: #fff;
-            font-size: 13px;
-            border-radius: 5px;
-            box-shadow: 0 0 4px #347eff;
-            text-transform: uppercase;
-            cursor: pointer;
-        }
-        
-        .right-section .contents .texts {
-            text-align: center;
-        }
-        
-        .right-section .contents .texts p {
-            font-size: 12px;
-            color: #777;
-            margin-top: 10px;
-            /* width: 300px; */
-        }
-        /* -------------------media queries------------- */
-        
-        @media only screen and (max-width:1100px) {
-            .wrapper {
-                padding: 30px 40px;
-            }
-            .wrapper .signIn-Form form p {
-                font-size: 10px;
-                color: #777;
-                margin-bottom: 20px;
-                width: 235px;
-            }
-        }
-        
-        @media only screen and (max-width:900px) {
-            .wrapper .left-section {
-                flex-basis: 50%;
-                padding: 30px 20px;
-            }
-            .wrapper .right-section {
-                display: flex;
-                align-items: center;
-            }
-            .right-section .contents .image {
-                height: 140px;
-            }
-            .right-section .contents .texts h2 {
-                font-size: 12px;
-            }
-            .right-section .contents .texts p {
-                font-size: 9px;
-            }
-        }
-        
-        @media only screen and (max-width:500px) {
-            .wrapper {
-                padding: 0 0;
-                width: 330px;
-            }
-            .wrapper .left-section {
-                flex-basis: 100%;
-                padding: 30px;
-            }
-            .wrapper .right-section {
-                display: none;
-            }
-            .wrapper .left-section .signIn-Form form .input-tags input {
-                height: 40px;
-            }
-            .wrapper .signIn-Form form p {
-                font-size: 11px;
-                color: #777;
-                margin-bottom: 20px;
-                width: unset;
-                padding-right: 20px;
-            }
-            .wrapper .left-section .signIn-Form form h2 {
-                font-size: 15px;
-            }
-            .wrapper .left-section .headers span h2 {
-                font-size: 17px;
-            }
-            .wrapper .left-section .headers span i {
-                font-size: 17px;
-            }
-            .wrapper .left-section .headers h3 {
-                font-size: 17px;
-            }
-            .wrapper .left-section .signIn-Form form .some-options a {
-                font-size: 11px;
-            }
-            .wrapper .left-section .signIn-Form form .some-options .checkBox span {
-                font-size: 11px;
-            }
-            .wrapper .left-section .signIn-Form form .btn input {
-                height: 30px;
-                font-size: 13px;
-            }
-            .wrapper .left-section .signIn-Form form .input-tags input::placeholder {
-                font-size: 10px;
-            }
-            .wrapper .left-section .signIn-Form form .password-type span small {
-                font-size: 9px;
-            }
-        }
-        
-        @media only screen and (max-width:300px) {
-            .wrapper {
-                width: unset;
-            }
-        }
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+ :root {
+    --primary-color: #1E90FF;
+    --main-font: 'Lato', sans-serif;
+    --box-height: 90px;
+    --input-box-height: 45px;
+    --input-box-border-radius: 6px;
+    --heading-font-size: 20px;
+    --para-font-size: 13px;
+    --para-font-color: #555;
+    --btn-font-size: 16px;
+}
+
+#PasswordRecovery,
+#signInpage,
+#createPassword {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#PasswordRecovery.removePage {
+    display: none;
+}
+
+#signInpage {
+    position: absolute;
+    right: -100000px;
+    top: 0;
+    transition: 0.5s;
+}
+
+#signInpage.showPage {
+    right: 0;
+    top: 0;
+    transition: all 0.3s;
+}
+
+#signInpage.removePage {
+    display: none;
+}
+
+#createPassword {
+    position: absolute;
+    top: -100000px;
+    right: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+#createPassword.showPage {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 14px;
+}
+
+.wrapper .left-div {
+    flex-basis: 50%;
+    padding: 50px 100px;
+}
+
+.wrapper .left-div .logo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.wrapper .left-div .logo img {
+    height: 17px;
+    width: 100px;
+}
+
+.wrapper .left-div .heading-texts h2,
+.wrapper .left-div .heading-texts p {
+    font-family: var(--main-font);
+}
+
+.wrapper .left-div .heading-texts h2 {
+    font-weight: 800;
+    font-size: var(--heading-font-size);
+}
+
+.wrapper .left-div .heading-texts p {
+    font-size: var(--para-font-size);
+    color: var(--para-font-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.wrapper .left-div .input-div {
+    position: relative;
+}
+
+.wrapper .left-div .input-div label {
+    position: absolute;
+    top: 21px;
+    left: 20px;
+    pointer-events: none;
+    transition: all 0.3s;
+    color: #555;
+    font-weight: 550;
+}
+
+.wrapper .left-div .input-div input:focus~label,
+.wrapper .left-div .input-div input:valid~label {
+    transform: translate(-8px, -19px);
+    pointer-events: none;
+    font-size: 12px;
+    background: #fff;
+    padding: 0 4px;
+    font-weight: normal;
+}
+
+.wrapper .left-div .input-div input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper .left-div input {
+    margin: 10px 0px;
+    width: 100%;
+    height: var(--input-box-height);
+    border-radius: var(--input-box-border-radius);
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding-left: 10px;
+    font-family: var(--main-font);
+}
+
+.wrapper .left-div .input-btns input:nth-child(1) {
+    border: none;
+    background: var(--primary-color);
+    font-size: var(--btn-font-size);
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+.wrapper .left-div .input-btns input:nth-child(1):hover {
+    box-shadow: 0 0 3px #1E90FF;
+}
+
+.wrapper .left-div .input-btns input:nth-child(2) {
+    background: transparent;
+    border: none;
+    color: #444;
+    font-weight: 600;
+    font-size: var(--btn-font-size);
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.wrapper .left-div .input-btns input:nth-child(2):hover {
+    color: #222;
+}
+
+.wrapper .right-div {
+    flex-basis: 50%;
+    text-align: center;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 50px 100px;
+}
+
+.wrapper .right-div .image {
+    height: 200px;
+}
+
+.wrapper .right-div .image img {
+    height: 100%;
+    /* filter: hue-rotate(144deg); */
+}
+
+.wrapper .right-div .texts {
+    font-family: var(--main-font);
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .right-div .texts h2 {
+    font-size: var(--heading-font-size);
+    font-weight: 800;
+}
+
+.wrapper .right-div .texts p {
+    color: var(--para-font-color);
+    font-size: var(--para-font-size);
+    margin-top: 8px;
+}
+
+
+/* -------------------------sign in page----------------------- */
+
+#signInpage .wrapper .left-div .heading-texts h2 {
+    margin-bottom: 20px;
+}
+
+#signInpage .wrapper .left-div .some-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#signInpage .wrapper .left-div .some-option .check-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#signInpage .wrapper .left-div .some-option .check-box input {
+    height: 15px;
+    width: 15px;
+    margin-right: 6px;
+}
+
+#signInpage .wrapper .left-div .some-option .check-box small {
+    color: #888;
+    font-size: 15px;
+}
+
+#signInpage .wrapper .left-div .some-option a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+
+/* ---create password section---- */
+
+#createPassword .wrapper .left-div form .password-instruction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+#createPassword .wrapper .left-div form .password-instruction span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#createPassword .wrapper .left-div form .password-instruction span:nth-child(1) h4 {
+    color: #008000;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#createPassword .wrapper .left-div form .password-instruction span:nth-child(2) h4 {
+    color: #FF0000;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#createPassword .wrapper .left-div form .password-instruction span:nth-child(3) h4 {
+    color: #0000FF;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#createPassword .wrapper .left-div form .password-instruction span:nth-child(4) h4 {
+    color: #FFA500;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#createPassword .wrapper .left-div form .password-instruction span small {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    font-weight: 550;
+}
