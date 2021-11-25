@@ -20,9 +20,6 @@
 }
 
 @media only screen and (max-width:500px) {
-    body {
-        background: linear-gradient(133deg, #84bffa, #1E90FF);
-    }
     .wrapper {
         display: flex;
         align-items: center;
@@ -31,7 +28,7 @@
         box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
         border-radius: 14px;
         width: 90%;
-        background: #fff;
+        background: linear-gradient(133deg, #fff, rgba(0, 0, 0, 0.4));
     }
     .wrapper .right-div {
         display: none;
