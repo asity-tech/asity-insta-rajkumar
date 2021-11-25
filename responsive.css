@@ -32,6 +32,7 @@
         border-radius: 14px;
         width: 90%;
         background: #fff;
+        z-index: 2;
     }
     .wrapper .right-div {
         display: none;
