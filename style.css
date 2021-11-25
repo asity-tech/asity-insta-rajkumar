@@ -64,7 +64,7 @@ body {
 }
 
 .wrapper .left-div .logo img {
-    height: 17px;
+    height: 20px;
     width: 100px;
 }
 
@@ -74,7 +74,7 @@ body {
 }
 
 .wrapper .left-div .heading-texts h2 {
-    font-weight: 800;
+    font-weight: 700;
     font-size: var(--heading-font-size);
 }
 
