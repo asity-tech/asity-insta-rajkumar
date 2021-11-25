@@ -7,37 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <title>Password Recovery</title>
+    <title>Sign in</title>
 </head>
 
 <body>
-    <!-- ----password recovery page start----- -->
-    <section id="PasswordRecovery">
+    <section id="signInpage">
         <div class="wrapper">
             <div class="left-div">
                 <div class="logo">
                     <img src="logo.svg" alt="">
                 </div>
                 <div class="heading-texts">
-                    <h2>Password recovery</h2>
-                    <p>Enter your Email & we'll send you link to reset your password</p>
+                    <h2>Sign In</h2>
                 </div>
                 <form action="#">
                     <div class="input-div">
                         <input type="text" autocomplete="off" required>
                         <label for="Email">Email</label>
                     </div>
+                    <div class="input-div">
+                        <input type="password" autocomplete="off" required>
+                        <label for="password">Password</label>
+                    </div>
                     <div class="input-btns">
-                        <a href="signinpage.html">Send</a>
-                        <a href="#">Exit</a>
-                        <!-- <input type="button" value="Send" id="send">
-                        <input type="button" value="Exit" id="exit"> -->
+                        <a href="createpasswordpage.html">Send</a>
+                    </div>
+                    <div class="some-option">
+                        <div class="check-box">
+                            <input type="checkbox" name="fp" id="">
+                            <small>Remember</small>
+                        </div>
+                        <a href="#">Forgot password?</a>
                     </div>
                 </form>
             </div>
             <div class="right-div">
                 <div class="image">
-                    <img src="illu-1.svg" alt="">
+                    <img src="illu-2.svg" alt="">
                 </div>
                 <div class="texts">
                     <h2>Keep your personal data updated!</h2>

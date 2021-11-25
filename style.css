@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
     margin: 0;
     padding: 0;
     outline: none;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Urbanist', sans-serif;
 }
 
 body {
@@ -19,8 +19,8 @@ body {
     --input-box-height: 45px;
     --input-box-border-radius: 6px;
     --heading-font-size: 20px;
-    --para-font-size: 13px;
-    --para-font-color: #555;
+    --para-font-size: 12px;
+    --para-font-color: rgba(0, 0, 0, 0.5);
     --btn-font-size: 16px;
 }
 
@@ -34,53 +34,28 @@ body {
     justify-content: center;
 }
 
-#PasswordRecovery.removePage {
-    display: none;
-}
-
-#signInpage {
-    position: absolute;
-    right: -100000px;
-    top: 0;
-    transition: 0.5s;
-}
-
-#signInpage.showPage {
-    right: 0;
-    top: 0;
-    transition: all 0.3s;
-}
-
-#signInpage.removePage {
-    display: none;
-}
-
-#createPassword {
-    position: absolute;
-    top: -100000px;
-    right: 0;
-    left: 0;
-    transition: all 0.5s;
-}
-
-#createPassword.showPage {
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
 .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 60px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 14px;
+    position: relative;
+}
+
+.wrapper::before {
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .wrapper .left-div {
     flex-basis: 50%;
-    padding: 50px 100px;
+    padding: 30px 100px;
 }
 
 .wrapper .left-div .logo {
@@ -116,12 +91,12 @@ body {
 
 .wrapper .left-div .input-div label {
     position: absolute;
-    top: 21px;
+    top: 24px;
     left: 20px;
     pointer-events: none;
     transition: all 0.3s;
-    color: #555;
-    font-weight: 550;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
 }
 
 .wrapper .left-div .input-div input:focus~label,
@@ -132,10 +107,6 @@ body {
     background: #fff;
     padding: 0 4px;
     font-weight: normal;
-}
-
-.wrapper .left-div .input-div input:focus {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .wrapper .left-div input {
@@ -149,42 +120,43 @@ body {
     font-family: var(--main-font);
 }
 
-.wrapper .left-div .input-btns input:nth-child(1) {
-    border: none;
+.wrapper .input-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper .input-btns a {
     background: var(--primary-color);
-    font-size: var(--btn-font-size);
+    width: 100%;
+    margin: 10px 0px;
+    text-align: center;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 600;
     color: #fff;
-    cursor: pointer;
+    border-radius: var(--input-box-border-radius);
 }
 
-.wrapper .left-div .input-btns input:nth-child(1):hover {
-    box-shadow: 0 0 3px #1E90FF;
-}
-
-.wrapper .left-div .input-btns input:nth-child(2) {
+.wrapper .input-btns a:nth-child(2) {
     background: transparent;
-    border: none;
-    color: #444;
-    font-weight: 600;
-    font-size: var(--btn-font-size);
-    margin-top: -10px;
-    cursor: pointer;
-}
-
-.wrapper .left-div .input-btns input:nth-child(2):hover {
-    color: #222;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 0px;
+    font-weight: 800;
 }
 
 .wrapper .right-div {
     flex-basis: 50%;
     text-align: center;
-    border-left: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 50px 100px;
+    /* border-left: 1px solid rgba(0, 0, 0, 0.2); */
+    padding: 30px 100px;
 }
 
 .wrapper .right-div .image {
-    height: 200px;
+    height: 300px;
 }
 
 .wrapper .right-div .image img {
@@ -226,21 +198,20 @@ body {
     justify-content: space-between;
 }
 
-#signInpage .wrapper .left-div .some-option .check-box {
+#signInpage .wrapper .check-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#signInpage .wrapper .left-div .some-option .check-box input {
-    height: 15px;
-    width: 15px;
-    margin-right: 6px;
+#signInpage .wrapper .check-box input {
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
 }
 
-#signInpage .wrapper .left-div .some-option .check-box small {
+#signInpage .wrapper .check-box small {
     color: #888;
-    font-size: 15px;
 }
 
 #signInpage .wrapper .left-div .some-option a {
@@ -248,49 +219,58 @@ body {
     font-weight: 600;
 }
 
+#signInpage .wrapper .check-box small,
+#signInpage .wrapper .left-div .some-option a {
+    font-size: 13px;
+}
+
 
 /* ---create password section---- */
 
-#createPassword .wrapper .left-div form .password-instruction {
+#createPassword .password-instruction {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 10px 0;
 }
 
-#createPassword .wrapper .left-div form .password-instruction span {
+#createPassword .password-instruction span {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-#createPassword .wrapper .left-div form .password-instruction span:nth-child(1) h4 {
+#createPassword .password-instruction span:nth-child(1) h4 {
     color: #008000;
     font-weight: 800;
-    font-size: 18px;
 }
 
-#createPassword .wrapper .left-div form .password-instruction span:nth-child(2) h4 {
+#createPassword .password-instruction span:nth-child(2) h4 {
     color: #FF0000;
     font-weight: 800;
-    font-size: 18px;
 }
 
-#createPassword .wrapper .left-div form .password-instruction span:nth-child(3) h4 {
+#createPassword .password-instruction span:nth-child(3) h4 {
     color: #0000FF;
     font-weight: 800;
-    font-size: 18px;
 }
 
-#createPassword .wrapper .left-div form .password-instruction span:nth-child(4) h4 {
+#createPassword .password-instruction span:nth-child(4) h4 {
     color: #FFA500;
     font-weight: 800;
+}
+
+#createPassword .password-instruction span:nth-child(1) h4,
+#createPassword .password-instruction span:nth-child(2) h4,
+#createPassword .password-instruction span:nth-child(3) h4,
+#createPassword .password-instruction span:nth-child(4) h4 {
     font-size: 18px;
 }
 
 #createPassword .wrapper .left-div form .password-instruction span small {
     color: rgba(0, 0, 0, 0.6);
-    font-size: 12px;
-    font-weight: 550;
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 4px;
 }
