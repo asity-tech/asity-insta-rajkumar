@@ -8,10 +8,6 @@
     font-family: 'Urbanist', sans-serif;
 }
 
-body {
-    overflow: hidden;
-}
-
  :root {
     --primary-color: #1E90FF;
     --main-font: 'Lato', sans-serif;
@@ -32,6 +28,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .wrapper {
@@ -40,6 +38,48 @@ body {
     justify-content: center;
     border-radius: 14px;
     position: relative;
+}
+
+
+/* ---------------Adding animation------ */
+
+#PasswordRecovery {
+    animation: anim1 ease-in-out 0.5s;
+}
+
+#signInpage {
+    animation: anim2 ease-in 0.5s;
+}
+
+#createPassword {
+    animation: anim3 ease 0.5s;
+}
+
+@keyframes anim1 {
+    0% {
+        transform: translateY(-1000px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes anim2 {
+    0% {
+        transform: scale(0.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes anim3 {
+    0% {
+        transform: translateX(1000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
 
 .wrapper::before {
@@ -78,6 +118,17 @@ body {
     font-size: var(--heading-font-size);
 }
 
+
+/* #PasswordRecovery .heading-texts p,
+#createPassword .heading-texts p {
+    font-size: 10px;
+} */
+
+#signInpage .left-div .heading-texts p {
+    opacity: 0;
+    margin: 0 0;
+}
+
 .wrapper .left-div .heading-texts p {
     font-size: var(--para-font-size);
     color: var(--para-font-color);
@@ -101,7 +152,7 @@ body {
 
 .wrapper .left-div .input-div input:focus~label,
 .wrapper .left-div .input-div input:valid~label {
-    transform: translate(-8px, -19px);
+    transform: translate(-9px, -20px);
     pointer-events: none;
     font-size: 12px;
     background: #fff;
